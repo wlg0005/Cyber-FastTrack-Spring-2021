@@ -17,7 +17,7 @@ Hm, so it looks like we're given `frame.png` which is a QR code and `code.png` w
 
 If you scan `frame.png`, you get the following text: `Hey, I've put the flag into the other file using the same trick we always use. You know what to do. :)`
 
-So, we know that flag is within `code.png`. One of the first things I noticed was that the border of `code.png` is black while the border of `frame.png`. This made me think of the bitwise operation XOR which evaluates to true when the number of true inputs is odd. So if we imagine that the color black = 0 and the color white = 1, then the output would be white (1). 
+So, we know that flag is within `code.png`. One of the first things I noticed was that the border of `code.png` is black while the border of `frame.png` is white. This made me think of the bitwise operation XOR which evaluates to true when the number of true inputs is odd. So if we imagine that the color black = 0 and the color white = 1, then the output would be white (1). 
 
 With that understanding, let's trying to XOR these images together! I used a tool called [StegSolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install) to perform this operation for me. Opening up `code.png` in StegSolve, and then choosing `Analyse -> Image Combiner` shows the XOR of the two images:
 
