@@ -27,7 +27,7 @@ PORT     STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 19.65 seconds
 ```
 
-Cool, Nmap was only able to find one port so this makes our lives a lot easire. We can use netcat to connect to the server with port `1061`:
+Cool, Nmap was only able to find one port so this makes our lives a lot easier. We can use netcat to connect to the server with port `1061`:
 
 ```bash
 nc cfta-ne01.allyourbases.co 1061
