@@ -3,5 +3,5 @@ Crypto Writeups
 
 Challenges:
 
-### Easy:
+### Medium:
   * [CM01](./CM01)
