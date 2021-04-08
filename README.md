@@ -8,7 +8,7 @@ This was a good experience for me since I am used to competing with my universit
 
 Competing solo is a completely different feeling since I was no longer able to rely on my teammates in my weak areas. Overall, enjoyed the competition and looking forward to see which scholarships I will qualify for!
 
-Feel free to contact me if you want to discuss challenges!
+Feel free to contact me if you want to discuss the challenges or anything else!
   * Email: wlg0005@uah.edu
   * Discord: Ducky#4488
 
