@@ -1,4 +1,4 @@
-Web Exploitation Writeups
+Binary Exploitation Writeups
 =========================
 
 Challenges:
