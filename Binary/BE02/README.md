@@ -20,7 +20,7 @@ ROT IN sHELL :: ROT13's your input!
 >
 ```
 
-So, the program just returns the ROT13 cipher for your input text. During the competition, I had a hunch that this would probably be a simple buffer overflow since it was an easy challenge. So I tried spamming my keyboard with `A` characters:
+So the program just returns the ROT13 cipher for your input text. During the competition, I had a hunch that this would probably be a simple buffer overflow since it was an easy challenge. So I tried spamming my keyboard with `A` characters:
 
 ```bash
 ./rot13
